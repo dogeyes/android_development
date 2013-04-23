@@ -1,0 +1,22 @@
+package com.example.events;
+
+import static android.provider.BaseColumns._ID;
+import static com.example.events.Constants.TABLE_NAME;
+import static com.example.events.Constants.TIME;
+import static com.example.events.Constants.TITLE;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class EventsData extends SQLiteOpenHelper {
+	private static final String DATABASE_NAME = "events.db";
+	private static final int DATABASE_VERSION = 1;
+	
+	public EventsData(Context ctx)
+	{
+		super(ctx, DATABASE_NAME, null, DATABASE_VERSION);
+	}
+	
+
+}

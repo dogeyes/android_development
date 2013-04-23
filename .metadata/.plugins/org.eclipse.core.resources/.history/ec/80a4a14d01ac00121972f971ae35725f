@@ -1,0 +1,9 @@
+package com.example.events;
+
+import static android.provider.BaseColumns._ID;
+import static com.example.events.Constants.TABLE_NAME;
+import static com.examp
+
+public class EventsData {
+
+}

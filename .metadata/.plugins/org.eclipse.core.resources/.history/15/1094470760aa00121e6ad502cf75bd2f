@@ -1,0 +1,36 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Translate" >
+	
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColums="1"
+        android:padding="10dip" >
+        <TableRow>
+            <TextView android:text="@string/from_text" />
+            <Spinner android:id="@+id/from_language" />
+        </TableRow>
+        <TableLayout>
+            <EditText android:id="@+id/original_text"
+                android:hint="@string/original_hint"
+                android:padding="10dip"
+                android:textSize="18sp" />
+        </TableLayout>
+        <TableRow>
+            <TextView android:text="@string/to_text" />
+            <Spinner android:id="@+id/to_language" />
+        </TableRow>
+        <TableLayout>
+            <TextView 
+                android:id="@+id/translated_text"
+                android:padding="10dip"
+                android:textSize="18sp" />
+        </TableLayout>
+        
+    </TableLayout>
+
+</ScrollView>

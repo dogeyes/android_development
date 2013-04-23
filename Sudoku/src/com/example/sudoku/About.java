@@ -3,6 +3,7 @@ package com.example.sudoku;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.util.Log;
 
 public class About extends Activity {
 
@@ -10,6 +11,10 @@ public class About extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.about);
+		String[] files = this.fileList();
+		Log.d("FILE", "About");
+		for(String s : files)
+			Log.d("FILE", s);
 	}
 
 	@Override

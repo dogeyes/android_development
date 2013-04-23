@@ -17,7 +17,12 @@ public class Game extends Activity {
 	public static final int DIFFICULTY_HARD = 2;
 	private static int puzzle[] = new int[9*9];
 	private static boolean puzzleMask[] = new boolean[9*9];
+	private static String puzMask;
 	private PuzzleView puzzleView;
+	private int count;
+	private static final String PREF_PUZZLE = "puzzle";
+	private static final String PREF_PUZZLE_MASK = "puzzle_mask";
+	protected static final int DIFFICULTY_CONTINUE = -1;
 	
 	private final String easyPuzzle = 
 			"360000000004230800000004200" + 
@@ -40,6 +45,7 @@ public class Game extends Activity {
 		super.onCreate(savedInstanceState);
 		Log.d(TAG, "onCreate");
 		int diff = getIntent().getIntExtra(KEY_DIFFICULTY, DIFFICULTY_EASY);
+		getIntent().putExtra(KEY_DIFFICULTY, DIFFICULTY_CONTINUE);
 		puzzle = getPuzzle(diff);
 		calculateUsedTiles();
 		puzzleView = new PuzzleView(this);
@@ -60,18 +66,32 @@ public class Game extends Activity {
 		Log.d(TAG, "getPuzzle( " + diff + ")");
 		switch(diff)
 		{
+		case DIFFICULTY_CONTINUE:
+			puz = getPreferences(MODE_PRIVATE).getString(PREF_PUZZLE, easyPuzzle);
+			puzMask = getPreferences(MODE_PRIVATE).getString(PREF_PUZZLE_MASK, easyPuzzle);
+			break;
 		case DIFFICULTY_HARD:
 			puz = hardPuzzle;
+			puzMask = puz;
 			break;
 
 		case DIFFICULTY_MEDIUM:
 			puz = mediumPuzzle;
+			puzMask = puz;
 			break;
 
 		case DIFFICULTY_EASY:
 			puz = easyPuzzle;
+			puzMask = puz;
 			break;
 		}
+		count = 0;
+		for(int i = 0; i < puz.length(); ++i)
+		{
+			if(puz.charAt(i) != '0')
+				count ++;
+		}
+		puzzleMask = fromMaskString(puzMask);
 		return fromPuzzleString(puz);
 	}
 	private void calculateUsedTiles()
@@ -177,6 +197,11 @@ public class Game extends Activity {
 	}
 	private void setTile(int x, int y, int value)
 	{
+		if(puzzle[y*9 + x] == 0 && value != 0)
+			count++;
+		else if(puzzle[y * 9 + x] != 0 && value == 0)
+			count--;
+		
 		puzzle[y * 9 + x] = value;
 	}
 	private final int used[][][] = new int[9][9][];
@@ -199,18 +224,58 @@ public class Game extends Activity {
 		for(int i = 0; i < puz.length; ++i)
 		{
 			puz[i] = string.charAt(i) - '0';
-			if(puz[i] == 0)
-				puzzleMask[i] = false;
-			else
-				puzzleMask[i] = true;
 		}
 		return puz;
 	}
-	public void showFinish()
+	static protected boolean[] fromMaskString(String string)
+	{
+		boolean[] mas = new boolean[string.length()];
+		for(int i = 0; i < string.length(); ++i)
+		{
+			if(string.charAt(i) == '0')
+				mas[i] = false;
+			else 
+				mas[i] = true;
+		}
+		return mas;
+	}
+	static protected String toMaskString(boolean[] mas)
+	{
+		StringBuilder sb = new StringBuilder();
+		for(boolean b: mas)
+		{
+			if(b)
+				sb.append('1');
+			else
+				sb.append('0');
+		}
+		return sb.toString();
+	}
+	public boolean isWin()
+	{
+		return count == 81;
+	}
+	public void showWin()
 	{
 		Toast toast = Toast.makeText(this, R.string.finish_text, Toast.LENGTH_SHORT);
 		toast.setGravity(Gravity.CENTER, 0, 0);
 		toast.show();
+	}
+	@Override
+	protected void onResume()
+	{
+		super.onResume();
+		Music.play(this, R.raw.game);
+	}
+	@Override
+	protected void onPause()
+	{
+		super.onPause();
+		Log.d(TAG, "onPause");
+		Music.stop(this);
+		
+		getPreferences(MODE_PRIVATE).edit().putString(PREF_PUZZLE, toPuzzleString(puzzle)).commit();
+		getPreferences(MODE_PRIVATE).edit().putString(PREF_PUZZLE_MASK, puzMask).commit();
 	}
 
 }

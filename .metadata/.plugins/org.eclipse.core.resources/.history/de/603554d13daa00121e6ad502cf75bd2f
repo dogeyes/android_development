@@ -1,0 +1,13 @@
+package com.example.sudoku;
+
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.content.Context;
+
+public class Music {
+	MediaPlayer mp;
+	public Music(Context context, int resId)
+	{
+		
+	}
+}

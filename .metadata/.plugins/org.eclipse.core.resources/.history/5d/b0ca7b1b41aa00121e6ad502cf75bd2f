@@ -1,0 +1,18 @@
+package com.example.sudoku;
+
+import android.preference.PreferenceActivity;
+import android.os.Bundle;
+import android.content.Context;
+import android.preference.PreferenceManager;
+
+public class Prefs extends PreferenceActivity {
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		
+		addPreferencesFromResource(R.xml.settings);
+	}
+
+}

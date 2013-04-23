@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="languages" >
+        <item>Bulgarian</item>
+        <item>Chinese Simplified (zh-CN)</item>
+        <item>Chinese Traditional (zh-TW)</item>
+        <item>Catalan (ca)</item>
+        <item></item>
+    </array>
+</resources>

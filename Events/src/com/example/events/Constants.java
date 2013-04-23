@@ -1,0 +1,9 @@
+package com.example.events;
+
+import android.provider.BaseColumns;
+
+public interface Constants {
+	public static final String TABLE_NAME = "events";
+	public static final String TIME = "time";
+	public static final String TITLE = "title";
+}

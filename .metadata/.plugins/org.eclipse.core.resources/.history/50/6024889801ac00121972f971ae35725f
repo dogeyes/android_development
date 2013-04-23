@@ -1,0 +1,10 @@
+package com.example.events;
+
+import static android.provider.BaseColumns._ID;
+import static com.example.events.Constants.TABLE_NAME;
+import static com.example.events.Constants.TIME;
+import static com.example.events.Constants.TITLE;
+
+public class EventsData {
+
+}

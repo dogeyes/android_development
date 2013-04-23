@@ -1,0 +1,86 @@
+package com.example.events;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.widget.SimpleCursorAdapter;
+import android.view.Menu;
+import android.app.ListActivity;
+import static android.provider.BaseColumns._ID;
+import static com.example.events.Constants.TABLE_NAME;
+import static com.example.events.Constants.TIME;
+import static com.example.events.Constants.TITLE;
+import android.content.ContentValues;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.widget.TextView;
+import android.widget.RelativeLayout;
+import android.util.Log;
+import android.view.View.OnClickListener;
+import android.widget.ListView;
+import android.view.View;
+import android.app.AlertDialog;
+android.app.AlertDialog.Builder;
+
+public class Events extends ListActivity  {
+	private EventsData events;
+	private RelativeLayout item;
+	private ListView list;
+	private static final String TAG = "Events";
+	private static String[] FROM = {_ID, TIME, TITLE};
+	private static String ORDER_BY = TIME + " DESC";
+	private static int[] TO = {R.id.rowid, R.id.time, R.id.title, };
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_events);
+		events = new EventsData(this);
+		try{
+			addEvent("Hello, Android!");
+			Cursor cursor = getEvents();
+			showEvents(cursor);
+		}finally{
+			events.close();
+		}
+		
+	}
+	public void myAlert(View view)
+	{
+		TextView title = (TextView)view.findViewById(R.id.title);
+		Log.d(TAG, title.getText().toString());
+		AlertDialog alert = new AlertDialog.Builder(this).create();
+		TextView alertText = this.findViewById(R.layout.alert).findViewById(R.id.alert);
+		alert.setView(this.findViewById(R.layout.alert));
+		
+		
+	}
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.events, menu);
+		return true;
+	}
+	
+	private void addEvent(String string)
+	{
+		Log.d(TAG, string);
+		SQLiteDatabase db = events.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		values.put(TIME, System.currentTimeMillis());
+		values.put(TITLE, string);
+		db.insertOrThrow(TABLE_NAME, null, values);
+	}
+
+	private Cursor getEvents()
+	{
+		SQLiteDatabase db = events.getReadableDatabase();
+		Cursor cursor = db.query(TABLE_NAME, FROM, null, null, null, null, ORDER_BY);
+		startManagingCursor(cursor);
+		return cursor;
+	}
+	
+	private void showEvents(Cursor cursor)
+	{
+		SimpleCursorAdapter adapter = new SimpleCursorAdapter(this, R.layout.item, cursor, FROM, TO);
+		setListAdapter(adapter);
+	}
+}

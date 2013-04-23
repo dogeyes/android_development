@@ -1,0 +1,7 @@
+package com.example.events;
+
+import android.provider.BaseColumns;
+
+public interface Constants {
+
+}

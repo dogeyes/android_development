@@ -1,0 +1,23 @@
+package com.example.sudoku;
+
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.content.Context;
+
+public class Music {
+	private static MediaPlayer mp;
+	public static void play(Context context, int resId)
+	{
+		if(mp != null)
+		{
+			stop(context);
+			mp = MediaPlayer.create(context, resId);
+			mp.start();
+			mp.isLooping();
+		}
+	}
+	public static void stop(Context context)
+	{
+		
+	}
+}

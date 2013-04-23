@@ -63,6 +63,9 @@ public class MainActivity extends Activity implements OnClickListener {
     	case R.id.exit_button:
     		finish();
     		break;
+    	case R.id.continue_button:
+    		startGame(Game.DIFFICULTY_CONTINUE);
+    		break;
     	}
     }
     private static final String TAG="Sudoku";
@@ -85,5 +88,17 @@ public class MainActivity extends Activity implements OnClickListener {
     	Intent intent = new Intent(MainActivity.this, Game.class);
     	intent.putExtra(Game.KEY_DIFFICULTY, i);
     	startActivity(intent);
+    }
+    @Override 
+    protected void onResume()
+    {
+    	super.onResume();
+    	Music.play(this, R.raw.main);
+    }
+    @Override
+    protected void onPause()
+    {
+    	super.onPause();
+    	Music.stop(this);
     }
 }
