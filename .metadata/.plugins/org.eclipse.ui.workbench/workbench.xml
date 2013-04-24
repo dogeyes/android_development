@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="28" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="-8" y="0">
+<window height="768" maximized="true" width="1024" x="636" y="16">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="250"/>
@@ -44,38 +44,30 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
-<part id="6"/>
-<part id="7"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_events.xml" partName="activity_events.xml" path="E:/Development/Events/res/layout/activity_events.xml" title="activity_events.xml" tooltip="Events/res/layout/activity_events.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Events/res/layout/activity_events.xml"/>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" partName="activity_main.xml" path="E:/Development/ToDoList/res/layout/activity_main.xml" title="activity_main.xml" tooltip="ToDoList/res/layout/activity_main.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ToDoList/res/layout/activity_main.xml"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Events.java" partName="Events.java" path="E:/Development/Events/src/com/example/events/Events.java" title="Events.java" tooltip="Events/src/com/example/events/Events.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Events/src/com/example/events/Events.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1849" selectionTopPixel="550"/>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" partName="strings.xml" path="E:/Development/ToDoList/res/values/strings.xml" title="strings.xml" tooltip="ToDoList/res/values/strings.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ToDoList/res/values/strings.xml"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="events.xml" partName="events.xml" path="E:/Development/Events/res/menu/events.xml" title="events.xml" tooltip="Events/res/menu/events.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Events/res/menu/events.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="E:/Development/ToDoList/src/com/github/dogeyes/todolist/MainActivity.java" title="MainActivity.java" tooltip="ToDoList/src/com/github/dogeyes/todolist/MainActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ToDoList/src/com/github/dogeyes/todolist/MainActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="864" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Constants.java" partName="Constants.java" path="E:/Development/Events/src/com/example/events/Constants.java" title="Constants.java" tooltip="Events/src/com/example/events/Constants.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Events/src/com/example/events/Constants.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="234" selectionTopPixel="0"/>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="item.xml" partName="item.xml" path="E:/Development/ToDoList/res/layout/item.xml" title="item.xml" tooltip="ToDoList/res/layout/item.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ToDoList/res/layout/item.xml"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EventsData.java" partName="EventsData.java" path="E:/Development/Events/src/com/example/events/EventsData.java" title="EventsData.java" tooltip="Events/src/com/example/events/EventsData.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Events/src/com/example/events/EventsData.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="845" selectionTopPixel="45"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EventConstants.java" partName="EventConstants.java" path="E:/Development/ToDoList/src/com/github/dogeyes/todolist/EventConstants.java" title="EventConstants.java" tooltip="ToDoList/src/com/github/dogeyes/todolist/EventConstants.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ToDoList/src/com/github/dogeyes/todolist/EventConstants.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="96" selectionTopPixel="0"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="item.xml" partName="item.xml" path="E:/Development/Events/res/layout/item.xml" title="item.xml" tooltip="Events/res/layout/item.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Events/res/layout/item.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" partName="strings.xml" path="E:/Development/Events/res/values/strings.xml" title="strings.xml" tooltip="Events/res/values/strings.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Events/res/values/strings.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="alert.xml" partName="alert.xml" path="E:/Development/Events/res/layout/alert.xml" title="alert.xml" tooltip="Events/res/layout/alert.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Events/res/layout/alert.xml"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EventsData.java" partName="EventsData.java" path="E:/Development/ToDoList/src/com/github/dogeyes/todolist/EventsData.java" title="EventsData.java" tooltip="ToDoList/src/com/github/dogeyes/todolist/EventsData.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ToDoList/src/com/github/dogeyes/todolist/EventsData.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="993" selectionTopPixel="55"/>
 </editor>
 </editors>
 <views>
@@ -93,7 +85,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Warnings (16 items)"/>
 <category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
@@ -145,7 +137,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.android.ide.eclipse.ddms.views.LogCatView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="0" fixed="0" version="0.016">
 <descriptor class="com.android.ide.eclipse.ddms.Perspective" id="com.android.ide.eclipse.ddms.Perspective" label="DDMS"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -305,12 +297,12 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.6671105" ratioLeft="501" ratioRight="250" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
@@ -318,8 +310,8 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
 <part id="4"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
@@ -341,129 +333,131 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Events/res/layout/activity_events.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Events/src/com/example/events/Events.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Events/res/layout/item.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Events/res/values/strings.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Events/res/layout/alert.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ToDoList/res/layout/activity_main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ToDoList/res/values/strings.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/ToDoList/res/layout/activity_main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ToDoList/src/com/github/dogeyes/todolist/MainActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ToDoList/res/layout/item.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ToDoList/gen/com/github/dogeyes/todolist/R.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/ToDoList/res/layout/item.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ToDoList/src/com/github/dogeyes/todolist/EventConstants.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ToDoList/src/com/github/dogeyes/todolist/EventsData.java"/>
 </editors>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="2072" y="0"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="activity_main.xml" index="0"/>
+<item historyLabel="MainActivity.java" index="3">
+<position info="not_deleted" x="647" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="2761" y="0"/>
+<item historyLabel="item.xml" index="4"/>
+<item historyLabel="MainActivity.java" index="3">
+<position info="not_deleted" x="647" y="0"/>
 </item>
-<item historyLabel="item.xml" index="2"/>
-<item historyLabel="activity_events.xml" index="0"/>
-<item historyLabel="strings.xml" index="3"/>
-<item historyLabel="activity_events.xml" index="0"/>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="2761" y="0"/>
+<item historyLabel="item.xml" index="4"/>
+<item historyLabel="activity_main.xml" index="0"/>
+<item historyLabel="item.xml" index="4"/>
+<item historyLabel="MainActivity.java" index="3">
+<position info="not_deleted" x="647" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="1142" y="0"/>
+<item historyLabel="item.xml" index="4"/>
+<item historyLabel="MainActivity.java" index="3">
+<position info="not_deleted" x="647" y="0"/>
 </item>
-<item historyLabel="item.xml" index="2"/>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="1142" y="0"/>
+<item historyLabel="item.xml" index="4"/>
+<item historyLabel="MainActivity.java" index="3">
+<position info="not_deleted" x="647" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="2733" y="0"/>
+<item historyLabel="item.xml" index="4"/>
+<item historyLabel="MainActivity.java" index="3">
+<position info="not_deleted" x="647" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="2747" y="0"/>
+<item historyLabel="R.java" index="5">
+<position info="not_deleted" x="1161" y="4"/>
 </item>
-<item historyLabel="item.xml" index="2"/>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="2747" y="0"/>
+<item historyLabel="MainActivity.java" index="3">
+<position info="not_deleted" x="566" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="1498" y="0"/>
+<item historyLabel="item.xml" index="4"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="item.xml" index="4"/>
+<item historyLabel="MainActivity.java" index="3">
+<position info="not_deleted" x="566" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="1498" y="0"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="item.xml" index="4">
+<position info="not_deleted" x="216" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="item.xml" index="6">
+<position info="not_deleted" x="38" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="1498" y="0"/>
+<item historyLabel="MainActivity.java" index="3">
+<position info="not_deleted" x="809" y="0"/>
 </item>
-<item historyLabel="item.xml" index="2"/>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="1498" y="0"/>
+<item historyLabel="activity_main.xml" index="0">
+<position info="not_deleted" x="1329" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="activity_main.xml" index="2">
+<position info="not_deleted" x="13" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="MainActivity.java" index="3">
+<position info="not_deleted" x="809" y="0"/>
 </item>
-<item historyLabel="item.xml" index="2"/>
-<item historyLabel="activity_events.xml" index="0"/>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="item.xml" index="4"/>
+<item historyLabel="MainActivity.java" index="3">
+<position info="not_deleted" x="727" y="10"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="item.xml" index="4"/>
+<item historyLabel="activity_main.xml" index="0"/>
+<item historyLabel="item.xml" index="4"/>
+<item historyLabel="MainActivity.java" index="3">
+<position info="not_deleted" x="727" y="10"/>
 </item>
-<item historyLabel="activity_events.xml" index="0"/>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="2701" y="0"/>
+<item historyLabel="activity_main.xml" index="0">
+<position info="not_deleted" x="1329" y="0"/>
 </item>
-<item historyLabel="activity_events.xml" index="0"/>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="activity_main.xml" index="2">
+<position info="not_deleted" x="13" y="0"/>
 </item>
-<item historyLabel="activity_events.xml" index="0"/>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="activity_main.xml" index="2">
+<position info="not_deleted" x="1331" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="activity_main.xml" index="2">
+<position info="not_deleted" x="0" y="13"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="activity_main.xml" index="2">
+<position info="not_deleted" x="1331" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="activity_main.xml" index="2">
+<position info="not_deleted" x="13" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="1498" y="0"/>
+<item historyLabel="activity_main.xml" index="2">
+<position info="not_deleted" x="1331" y="0"/>
 </item>
-<item historyLabel="item.xml" index="2"/>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="1882" y="0"/>
+<item historyLabel="MainActivity.java" index="3">
+<position info="not_deleted" x="864" y="0"/>
 </item>
-<item historyLabel="item.xml" index="2"/>
-<item historyLabel="alert.xml" index="4"/>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="1882" y="0"/>
+<item historyLabel="EventConstants.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="EventConstants.java" index="7">
+<position info="not_deleted" x="96" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="EventsData.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="EventsData.java" index="8">
+<position info="not_deleted" x="435" y="0"/>
 </item>
-<item historyLabel="alert.xml" index="4"/>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="EventsData.java" index="8">
+<position info="not_deleted" x="539" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="EventsData.java" index="8">
+<position info="not_deleted" x="781" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position/>
+<item historyLabel="EventsData.java" index="8">
+<position info="not_deleted" x="993" y="0"/>
 </item>
-<item historyLabel="Events.java" index="1">
-<position info="not_deleted" x="1853" y="0"/>
-</item>
-<item active="true" historyLabel="Events.java" index="1">
-<position info="not_deleted" x="751" y="0"/>
+<item active="true" historyLabel="EventsData.java" index="8">
+<position info="not_deleted" x="989" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -471,6 +465,12 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="right"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -479,10 +479,32 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.HeapStatus"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EventsData.java" tooltip="ToDoList/src/com/github/dogeyes/todolist/EventsData.java">
+<persistable path="/ToDoList/src/com/github/dogeyes/todolist/EventsData.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EventConstants.java" tooltip="ToDoList/src/com/github/dogeyes/todolist/EventConstants.java">
+<persistable path="/ToDoList/src/com/github/dogeyes/todolist/EventConstants.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="ToDoList/gen/com/github/dogeyes/todolist/R.java">
+<persistable path="/ToDoList/gen/com/github/dogeyes/todolist/R.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="item.xml" tooltip="ToDoList/res/layout/item.xml">
+<persistable path="/ToDoList/res/layout/item.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="ToDoList/src/com/github/dogeyes/todolist/MainActivity.java">
+<persistable path="/ToDoList/src/com/github/dogeyes/todolist/MainActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="ToDoList/res/values/strings.xml">
+<persistable path="/ToDoList/res/values/strings.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="ToDoList/res/layout/activity_main.xml">
+<persistable path="/ToDoList/res/layout/activity_main.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="alert.xml" tooltip="Events/res/layout/alert.xml">
 <persistable path="/Events/res/layout/alert.xml"/>
 </file>
@@ -506,27 +528,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_events.xml" tooltip="Events/res/layout/activity_events.xml">
 <persistable path="/Events/res/layout/activity_events.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="MyMap/AndroidManifest.xml">
-<persistable path="/MyMap/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_my_map.xml" tooltip="MyMap/res/layout/activity_my_map.xml">
-<persistable path="/MyMap/res/layout/activity_my_map.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="LocationTest/AndroidManifest.xml">
-<persistable path="/LocationTest/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="LocationTest/src/com/example/locationtest/MainActivity.java">
-<persistable path="/LocationTest/src/com/example/locationtest/MainActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="LocationTest/res/layout/activity_main.xml">
-<persistable path="/LocationTest/res/layout/activity_main.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" name="project.properties" tooltip="E:\Development\Sudoku\project.properties">
-<persistable uri="file:/E:/Development/Sudoku/project.properties"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="proguard-project.txt" tooltip="E:\Development\Sudoku\proguard-project.txt">
-<persistable uri="file:/E:/Development/Sudoku/proguard-project.txt"/>
 </file>
 </mruList>
 </workbench>
