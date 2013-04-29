@@ -9,6 +9,8 @@ import static android.provider.BaseColumns._ID;
 import static com.example.events.Constants.TABLE_NAME;
 import static com.example.events.Constants.TIME;
 import static com.example.events.Constants.TITLE;
+import static com.example.events.Constants.CONTENT_URI;
+import static com.example.events.Constants.AUTHORITY;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -35,20 +37,15 @@ public class Events extends ListActivity  {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_events);
 		events = new EventsData(this);
-		try{
-			addEvent("Hello, Android!");
-			Cursor cursor = getEvents();
-			showEvents(cursor);
-		}finally{
-			events.close();
-		}
+		addEvent("Hello, Android!");
+		Cursor cursor = getEvents();
+		showEvents(cursor);
 		
 	}
 	public void myAlert(View view)
 	{
 		TextView title = (TextView)view.findViewById(R.id.title);
 		Log.d(TAG, title.getText().toString());
-		AlertDialog alert = new AlertDialog.Builder(this).create();
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setMessage(title.getText().toString());
 		builder.create().show();
@@ -64,18 +61,15 @@ public class Events extends ListActivity  {
 	private void addEvent(String string)
 	{
 		Log.d(TAG, string);
-		SQLiteDatabase db = events.getWritableDatabase();
 		ContentValues values = new ContentValues();
 		values.put(TIME, System.currentTimeMillis());
 		values.put(TITLE, string);
-		db.insertOrThrow(TABLE_NAME, null, values);
+		getContentResolver().insert(CONTENT_URI, values);
 	}
 
 	private Cursor getEvents()
 	{
-		SQLiteDatabase db = events.getReadableDatabase();
-		Cursor cursor = db.query(TABLE_NAME, FROM, null, null, null, null, ORDER_BY);
-		startManagingCursor(cursor);
+		Cursor cursor = getContentResolver().query(CONTENT_URI, FROM, null, null, ORDER_BY);
 		return cursor;
 	}
 	

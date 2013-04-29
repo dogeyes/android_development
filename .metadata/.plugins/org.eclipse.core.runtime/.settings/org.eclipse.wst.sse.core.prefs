@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-task-tag-projects-already-scanned=BrowserIntent,BrowserView,LocalBrowser,LocationTest,MyMap,Sudoku,Translate,Events
+task-tag-projects-already-scanned=BrowserIntent,BrowserView,LocalBrowser,LocationTest,MyMap,Sudoku,Translate,Events,FragmentBasics,ToDoList,MapSample,google-play-services_lib,IconicTextViewmaster

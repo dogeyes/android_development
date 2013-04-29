@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.example.sudoku.R.raw"/>
-<fullyQualifiedTypeName name="android.media.MediaPlayer"/>
-<fullyQualifiedTypeName name="com.example.sudoku.Prefs"/>
-<fullyQualifiedTypeName name="android.os.Bundle"/>
-<fullyQualifiedTypeName name="android.widget.EditText"/>
-<fullyQualifiedTypeName name="com.example.browserintent.R.id"/>
-<fullyQualifiedTypeName name="android.webkit.WebView"/>
 <fullyQualifiedTypeName name="com.example.browserview.R.id"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.webkit.JsResult"/>
@@ -22,11 +15,9 @@
 <fullyQualifiedTypeName name="android.provider.BaseColumns"/>
 <fullyQualifiedTypeName name="com.example.events.Constants"/>
 <fullyQualifiedTypeName name="android.view.MotionEvent"/>
-<fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="android.widget.SimpleCursorAdapter.ViewBinder"/>
 <fullyQualifiedTypeName name="android.widget.RelativeLayout"/>
 <fullyQualifiedTypeName name="android.R.id"/>
-<fullyQualifiedTypeName name="android.app.AlertDialog"/>
 <fullyQualifiedTypeName name="com.example.events.R.layout"/>
 <fullyQualifiedTypeName name="com.example.events.R.id"/>
 <fullyQualifiedTypeName name="android.app.AlertDialog.Builder"/>
@@ -38,12 +29,35 @@
 <fullyQualifiedTypeName name="android.os.Build.VERSION"/>
 <fullyQualifiedTypeName name="android.R.layout"/>
 <fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
-<fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="com.example.fragmentbasics.R.id"/>
 <fullyQualifiedTypeName name="android.support.v4.app.FragmentManager"/>
 <fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
 <fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="android.widget.ListView"/>
-<fullyQualifiedTypeName name="com.github.dogeyes.todolist.R.id"/>
+<fullyQualifiedTypeName name="android.content.ContentValues"/>
+<fullyQualifiedTypeName name="com.github.dogeyes.todolist.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
+<fullyQualifiedTypeName name="android.net.Uri"/>
+<fullyQualifiedTypeName name="android.content.UriMatcher"/>
 <fullyQualifiedTypeName name="android.database.sqlite.SQLiteDatabase"/>
+<fullyQualifiedTypeName name="android.app.ListActivity"/>
+<fullyQualifiedTypeName name="com.github.dogeyes.todolist.EventConstants"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.widget.LinearLayout"/>
+<fullyQualifiedTypeName name="com.github.dogeyes.todolist.R.id"/>
+<fullyQualifiedTypeName name="com.github.dogeyes.todolist.R.color"/>
+<fullyQualifiedTypeName name="android.view.View.OnTouchListener"/>
+<fullyQualifiedTypeName name="com.atermenji.android.iconictextview.IconicFontDrawable"/>
+<fullyQualifiedTypeName name="android.view.ViewGroup"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="android.hardware.SensorEventListener"/>
+<fullyQualifiedTypeName name="android.hardware.SensorManager"/>
+<fullyQualifiedTypeName name="android.hardware.Sensor"/>
+<fullyQualifiedTypeName name="android.hardware.SensorEvent"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="android.support.v4.app.DialogFragment"/>
+<fullyQualifiedTypeName name="android.app.AlertDialog"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.app.Activity"/>
+<fullyQualifiedTypeName name="com.github.dogeyes.todolist.R.string"/>
 </qualifiedTypeNameHistroy>

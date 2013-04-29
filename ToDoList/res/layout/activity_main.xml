@@ -11,29 +11,38 @@
         android:orientation="horizontal">
         
         <EditText 
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/new_text"
             android:layout_width="0dip"
             android:layout_weight="1.0"
+            android:lines="1"
             android:hint="@string/new_text_hint"
             />
 
-        <Button
+        <com.atermenji.android.iconictextview.IconicTextView
             android:id="@+id/add_button"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_width="wrap_content"
-            android:text="@string/add_button"
+            android:gravity="center"
+    	    android:textSize="@dimen/add_icon_text_size"
             />
         <Button 
             android:id="@+id/clear_finish_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/clear_finish_button"
+            android:visibility="gone"
             />
     </LinearLayout>
-	<ListView
-	    android:id="@+id/event_list"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    />
+	<ListView android:id="@android:id/list"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:drawSelectorOnTop="false"
+               android:background="@drawable/textured_paper"/>
+
+     <TextView android:id="@android:id/empty"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#ffffff"
+               android:text="@string/no_data"/>
 </LinearLayout>

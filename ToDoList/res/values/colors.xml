@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="finished_color">#ffaaaaaa</color>
+    <color name="not_finished_color">#ff000000</color>
+    
+</resources>
